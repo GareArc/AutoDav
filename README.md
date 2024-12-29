@@ -34,6 +34,7 @@ Follow these steps to set up and start your WebDAV service:
 
    | **Variable**                     | **Description**                                              | **Default/Example**                 |
    | -------------------------------- | ------------------------------------------------------------ | ----------------------------------- |
+   | `WEBDAV_AUTH_TYPE`               | Authentication type.                                         | `Digest`                            |
    | `WEBDAV_USERNAME`                | Username for WebDAV authentication.                          | `yourusername`                      |
    | `WEBDAV_PASSWORD`                | Password for WebDAV authentication.                          | `yourpassword`                      |
    | `NGINX_SSL_PORT`                 | Internal Nginx HTTPS (SSL) service port.                     | `443`                               |
