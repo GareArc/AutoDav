@@ -45,7 +45,7 @@ Use `docker compose --profile certbot up` to use this features.
    ```
 
    Then you can access your serve with HTTPS.  
-   [https://your_domain.com](https://your_domain.com)
+   [https://your_domain.com/fb](https://your_domain.com/fb)
 
 ## SSL certificates renewal
 
