@@ -51,7 +51,9 @@ Follow these steps to set up and start your WebDAV service:
 
 3. (Optional) Enable TLS/SSL
 
-    To enable HTTPS with SSL/TLS, configure Certbot by following the [Certbot Configuration Guide](./certbot/README.md). Ensure that you update the .env file with your certificate details and enable NGINX_HTTPS_ENABLED.
+    To enable HTTPS with SSL/TLS, configure Certbot by following the [Certbot Configuration Guide](./certbot/README.md). Ensure that you update the `.env` file with your certificate details and set `NGINX_HTTPS_ENABLED` to `true`.
+
+    You can also use existing certificate files directly by specifying their paths in the `.env` file. Refer to the environment variable settings in the table above for more details.
 
 4. Start the WebDAV Service
 
@@ -92,7 +94,7 @@ It is recommended to change these credentials immediately after your first login
 - **Certbot Setup**: Ensure you set up Certbot correctly if you plan to use HTTPS.
 It is recommended to change these credentials immediately after your first login. You can update them in the settings page.
 
-### Related Projects and Credits
+## Related Projects and Credits
 
 This project builds upon and integrates several excellent tools and projects. Special thanks to the developers and maintainers of the following:
 
