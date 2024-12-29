@@ -16,7 +16,7 @@ services:
   
   filebrowser:
     image: hurlenko/filebrowser
-    user: "0:0"
+    user: "82:82"
     # ports:
     #   - 8080:8080
     volumes:
