@@ -19,7 +19,7 @@ services:
     # ports:
     #   - 8080:8080
     volumes:
-      - ./volumes/webdav:/data
+      - ./volumes/webdav/data:/data
       # - ./filebrowser:/config
     environment:
       - FB_BASEURL=/fb

@@ -65,13 +65,9 @@ Follow these steps to set up and start your WebDAV service:
 
     The service will start with the configurations defined in your `.env` file.
 
-## WebDAV Data Location
-
-All your files will be stored in the `data` folder. To access them via WebDAV, navigate to the `/data` path.
-
 ## Accessing the File Browser
 
-Once the service is running, you can access the file browser at:
+Once the service is running, you cn access the file browser at:
 
 ```shell
 # http
