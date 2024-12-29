@@ -4,6 +4,11 @@ server {
     listen ${NGINX_PORT};
     server_name ${NGINX_SERVER_NAME};
 
+    location /fb {
+        proxy_pass http://filebrowser:8080;
+        include fb.proxy.conf;
+    }
+
     location / {
         proxy_pass http://webdav:80;
         include proxy.conf;

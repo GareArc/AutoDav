@@ -1,2 +1,4 @@
 volumes/webdav/*
 volumes/certbot/*
+.env
+*.conf

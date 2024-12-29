@@ -2,7 +2,7 @@
 
 ## Short description
 
-docker compose certbot configurations with Backward compatibility (without certbot container).  
+docker compose certbot configurations.
 Use `docker compose --profile certbot up` to use this features.
 
 ## The simplest way for launching new servers with SSL certificates
