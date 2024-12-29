@@ -4,6 +4,7 @@ services:
     user: "0:0"
     restart: always
     environment:
+      - AUTH_TYPE=${WEBDAV_AUTH_TYPE:-Digest}
       - USERNAME=${WEBDAV_USERNAME:-yourusername}
       - PASSWORD=${WEBDAV_PASSWORD:-yourpassword}
     volumes:
