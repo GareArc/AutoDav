@@ -1,8 +1,8 @@
-# webdav-nginx-autossl
+# AutoDav
 
 ## Overview
 
-`webdav-nginx-autossl` helps you quickly set up a WebDAV service in Docker with automatic SSL support via Certbot. Additionally, it includes a web-based file browser UI (powered by [Filebrowser](https://filebrowser.org/)) for easy management of your WebDAV data.
+`AutoDav` helps you quickly set up a WebDAV service in Docker with automatic SSL support via Certbot. Additionally, it includes a web-based file browser UI (powered by [Filebrowser](https://filebrowser.org/)) for easy management of your WebDAV data.
 
 ## Features
 
@@ -102,4 +102,4 @@ This project builds upon and integrates several excellent tools and projects. Sp
 - Nginx: A powerful and flexible web server and reverse proxy.
 - Docker Compose: Simplifies multi-container Docker applications.
 
-These projects made `webdav-nginx-autossl` possible. Explore and support these tools to enhance your development experience!
+These projects made `AutoDav` possible. Explore and support these tools to enhance your development experience!
