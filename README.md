@@ -67,7 +67,7 @@ Follow these steps to set up and start your WebDAV service:
 
 ## Accessing the File Browser
 
-Once the service is running, you cn access the file browser at:
+Once the service is running, you can access the file browser at:
 
 ```shell
 # http
@@ -92,7 +92,6 @@ It is recommended to change these credentials immediately after your first login
 
 - **WebDAV Authentication**: The WebDAV username and password are configured in the .env file and are different from the Filebrowser credentials.
 - **Certbot Setup**: Ensure you set up Certbot correctly if you plan to use HTTPS.
-It is recommended to change these credentials immediately after your first login. You can update them in the settings page.
 
 ## Related Projects and Credits
 
