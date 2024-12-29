@@ -1,6 +1,7 @@
 services:
   webdav:
     image: bytemark/webdav
+    user: "0:0"
     restart: always
     environment:
       - USERNAME=${WEBDAV_USERNAME:-yourusername}
@@ -9,10 +10,12 @@ services:
       - ./volumes/webdav:/var/lib/dav
     expose:
       - 80
+    security_opt:
+      - no-new-privileges:true
   
   filebrowser:
     image: hurlenko/filebrowser
-    user: "${UID}:${GID}"
+    user: "0:0"
     # ports:
     #   - 8080:8080
     volumes:
@@ -21,9 +24,12 @@ services:
     environment:
       - FB_BASEURL=/fb
     restart: always
+    security_opt:
+      - no-new-privileges:true
 
   nginx:
     image: nginx:latest
+    user: "0:0"
     restart: always
     volumes:
       - ./nginx/nginx.conf.template:/etc/nginx/nginx.conf.template
@@ -57,9 +63,12 @@ services:
       '-c',
       "cp /docker-entrypoint-mount.sh /docker-entrypoint.sh && sed -i 's/\r$$//' /docker-entrypoint.sh && chmod +x /docker-entrypoint.sh && /docker-entrypoint.sh",
     ]
+    security_opt:
+      - no-new-privileges:true
 
   certbot:
     image: certbot/certbot
+    user: "0:0"
     profiles:
       - certbot
     volumes:
