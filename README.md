@@ -37,10 +37,8 @@ Follow these steps to set up and start your WebDAV service:
    | `WEBDAV_AUTH_TYPE`               | Authentication type.                                         | `Digest`                            |
    | `WEBDAV_USERNAME`                | Username for WebDAV authentication.                          | `yourusername`                      |
    | `WEBDAV_PASSWORD`                | Password for WebDAV authentication.                          | `yourpassword`                      |
-   | `NGINX_SSL_PORT`                 | Internal Nginx HTTPS (SSL) service port.                     | `443`                               |
    | `NGINX_SSL_CERT_KEY_FILENAME`    | Filename of the SSL certificate private key.                 | `privkey.pem`                       |
    | `NGINX_SSL_CERT_FILENAME`        | Filename of the SSL certificate.                             | `fullchain.pem`                     |
-   | `NGINX_PORT`                     | Internal Nginx HTTP service port.                            | `80`                                |
    | `NGINX_KEEPALIVE_TIMEOUT`        | Timeout setting for Nginx keepalive connections.             | `65`                                |
    | `NGINX_HTTPS_ENABLED`            | Enable HTTPS for Nginx.                                      | `false`                             |
    | `NGINX_ENABLE_CERTBOT_CHALLENGE` | Enable Certbot challenge for SSL certificate issuance.       | `false`                             |
@@ -52,7 +50,7 @@ Follow these steps to set up and start your WebDAV service:
 
 3. (Optional) Enable TLS/SSL
 
-    To enable HTTPS with SSL/TLS, configure Certbot by following the [Certbot Configuration Guide](./certbot/README.md). Ensure that you update the `.env` file with your certificate details and set `NGINX_HTTPS_ENABLED` to `true`.
+    To enable HTTPS with TLS/SSL, configure Certbot by following the [Certbot Configuration Guide](./certbot/README.md). Ensure that you update the `.env` file with your certificate details and set `NGINX_HTTPS_ENABLED` to `true`.
 
     You can also use existing certificate files directly by specifying their paths in the `.env` file. Refer to the environment variable settings in the table above for more details.
 
@@ -100,7 +98,7 @@ This project builds upon and integrates several excellent tools and projects. Sp
 
 - [bytemark/webdav](https://github.com/BytemarkHosting/docker-webdav): A Docker solution for WebDAV.
 - [Filebrowser](https://filebrowser.org/): A fantastic open-source file browser for managing files via a web UI.
-- Certbot: A tool that automates the process of setting up and managing SSL/TLS certificates.
+- Certbot: A tool that automates the process of setting up and managing TLS/SSL certificates.
 - Nginx: A powerful and flexible web server and reverse proxy.
 - Docker Compose: Simplifies multi-container Docker applications.
 
