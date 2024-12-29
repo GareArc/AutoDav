@@ -1,7 +1,6 @@
 services:
   webdav:
     image: bytemark/webdav
-    user: "0:0"
     restart: always
     environment:
       - AUTH_TYPE=${WEBDAV_AUTH_TYPE:-Digest}
@@ -58,7 +57,7 @@ services:
       NGINX_SSL_PROTOCOLS: ${NGINX_SSL_PROTOCOLS:-TLSv1.1 TLSv1.2 TLSv1.3}
       NGINX_WORKER_PROCESSES: ${NGINX_WORKER_PROCESSES:-auto}
       NGINX_ENABLE_CERTBOT_CHALLENGE: ${NGINX_ENABLE_CERTBOT_CHALLENGE:-false}
-      NGINX_KEEPALIVE_TIMEOUT: ${NGINX_KEEPALIVE_TIMEOUT:-65}
+      NGINX_KEEPALIVE_TIMEOUT: ${NGINX_KEEPALIVE_TIMEOUT:-0}
       CERTBOT_DOMAIN: ${CERTBOT_DOMAIN:-}
     entrypoint: [
       'sh',

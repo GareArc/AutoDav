@@ -39,7 +39,7 @@ Follow these steps to set up and start your WebDAV service:
    | `WEBDAV_PASSWORD`                | Password for WebDAV authentication.                          | `yourpassword`                      |
    | `NGINX_SSL_CERT_KEY_FILENAME`    | Filename of the SSL certificate private key.                 | `privkey.pem`                       |
    | `NGINX_SSL_CERT_FILENAME`        | Filename of the SSL certificate.                             | `fullchain.pem`                     |
-   | `NGINX_KEEPALIVE_TIMEOUT`        | Timeout setting for Nginx keepalive connections.             | `65`                                |
+   | `NGINX_KEEPALIVE_TIMEOUT`        | Timeout setting for Nginx keepalive connections. (0 for )    | `0`                                 |
    | `NGINX_HTTPS_ENABLED`            | Enable HTTPS for Nginx.                                      | `false`                             |
    | `NGINX_ENABLE_CERTBOT_CHALLENGE` | Enable Certbot challenge for SSL certificate issuance.       | `false`                             |
    | `EXPOSE_NGINX_SSL_PORT`          | Port to expose Nginx HTTPS (SSL) service.                    | `443`                               |
