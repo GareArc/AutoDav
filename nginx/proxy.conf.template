@@ -4,3 +4,5 @@ proxy_set_header X-Forwarded-Proto $scheme;
 proxy_set_header Connection "";
 proxy_buffering off;
 client_max_body_size 0;
+client_body_timeout ${NGINX_WEDAV_TIMEOUT};
+send_timeout ${NGINX_WEDAV_TIMEOUT};
