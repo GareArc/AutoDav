@@ -18,8 +18,8 @@ Follow these steps to set up and start your WebDAV service:
 1. Clone the Repository
 
    ```bash
-   git clone https://github.com/GareArc/webdav-nginx-autossl.git
-   cd webdav-nginx-autossl
+   git clone https://github.com/GareArc/AutoDav.git
+   cd AutoDav
    ```
 
 2. Configure Environment Variables
